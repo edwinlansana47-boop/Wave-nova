@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wavenova - Explore</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Wavenova</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+            </nav>
+        </header>
+
+        <section class="explore-section">
+            <h2>All Music</h2>
+            <div class="music-grid">
+                <div class="music-card" onclick="playSong('songs/song1.mp4','My First Hit - Edinini')">
+                    <img src="images/cover1.jpeg">
+                    <div class="overlay"></div>
+                    <h3>My First Hit</h3>
+                    <p>Edinini</p>
+                    <audio controls>
+                        <source src="songs/song1.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+                <div class="music-card" onclick="playSong('songs/song2.mp4','Street Vibes - Razilay')">
+                    <img src="images/cover2.jpeg">
+                    <div class="overlay"></div>
+                    <h3>Street Vibes</h3>
+                    <p>Razilay</p>
+                    <audio controls>
+                        <source src="songs/song2.mp4" type="audio/mp4">
+                    </audio>
+                </div>
+            </div>
+        </section>
+        <script src="js/app.js"></script>
+    </body>
+</html>
